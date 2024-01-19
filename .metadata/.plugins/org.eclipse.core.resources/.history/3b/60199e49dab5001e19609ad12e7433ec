@@ -1,0 +1,28 @@
+package ex03;
+
+public class Exam01 {
+
+	public static void main(String[] args) {
+		
+		int exam  = 4000;         
+		
+		int hour = exam/3600;
+		int minute = (exam % 3600)/60;
+		int second = (exam % 3600)%60;
+		
+		System.out.println(hour + "시간 " + minute+"분 " + second+"초"  );
+		
+		//출력
+		// 1시간 4분 0초
+
+		
+		int a = 5;
+		
+		a++;
+		++a;
+		
+		System.out.println("a : " + a);
+		
+	}
+
+}

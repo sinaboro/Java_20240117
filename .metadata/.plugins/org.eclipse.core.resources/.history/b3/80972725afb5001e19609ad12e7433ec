@@ -1,0 +1,50 @@
+package ex01;
+
+public class Hello {
+	public static void main(String[] args) {
+
+		int kor = 10;   //변수 선언
+	
+		
+		kor = kor + 20;
+		
+		kor = kor + 100;
+		
+		System.out.println(kor);
+		
+		
+		
+		
+		
+		
+		
+		double f = 2147483648.0;
+		double f2 = 2147483658.0;
+		double f3 = 2147483668.0;
+		double f4 = 2147483678.0;
+		
+		System.out.println(f);
+		System.out.println(f2);
+		System.out.println(f3);
+		System.out.println(f4);
+		
+			
+		
+		
+	
+	}
+}
+
+
+class A{
+	
+}
+
+class B{
+	
+}
+
+
+class C{
+	
+}

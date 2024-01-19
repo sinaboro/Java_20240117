@@ -1,0 +1,48 @@
+package ex01;
+
+public class Hello {
+	public static void main(String[] args) {
+
+		int kor = 10;   //변수 선언
+	
+		
+		kor = kor + 20;
+		
+		kor = kor + 100;
+		
+		System.out.println(kor);
+		
+		
+	   double f = 1.2;
+	
+	   float f2 = 1.2f;
+	   
+	   long large = 10;
+		
+	   int i = (int)large;
+	   
+	   char a = 122;
+	   char b  = 88;
+	   char c = 'D';
+	   
+	   System.out.println(a);
+	   System.out.println(b);
+	   System.out.println(c);
+	   
+	
+	}
+}
+
+
+class A{
+	
+}
+
+class B{
+	
+}
+
+
+class C{
+	
+}

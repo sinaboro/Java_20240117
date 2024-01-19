@@ -1,0 +1,40 @@
+package ex01;
+
+public class Hello {
+	public static void main(String[] args) {
+
+		int kor;   //변수 선언
+		kor=10;  //변수 초기화
+		
+		int eng = 10;  //변수 선언 및 초기화
+
+		eng = 100;
+		
+		final int MAX;
+		MAX = 100;
+		
+	//	MAX = 200;
+		
+		
+		final int MIN = 0;
+		
+		//MIN = 100;
+		
+		System.out.println(kor);
+	
+	}
+}
+
+
+class A{
+	
+}
+
+class B{
+	
+}
+
+
+class C{
+	
+}

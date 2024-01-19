@@ -1,0 +1,49 @@
+package ex01;
+
+public class Hello {
+	public static void main(String[] args) {
+//		int kor  = 15;
+//		int kor = 015;
+		
+		final int kor = 10;  //15값은 변경 불가
+		int eng = 50;
+		
+				
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		System.out.println("kor");
+		
+		System.out.println(kor);
+		
+		
+		
+		System.out.println(eng);
+		System.out.println(kor);
+		
+		eng = 11;
+		
+		System.out.println(eng);
+	}
+}
+
+
+class A{
+	
+}
+
+class B{
+	
+}
+
+
+class C{
+	
+}
