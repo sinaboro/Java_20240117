@@ -32,12 +32,20 @@ public class Array02 {
 		System.out.println("총점 : " + total + ", 평균 : " + avg);
 		
 		System.out.println("\n---------------------------------");
+		
+		// 최대값 구하기
+		int max=0;
+		for(int i=0; i<arrNum.length; i++) {
+			
+			if(max < arrNum[i]) {
+				max = arrNum[i];
+			}
+		}
+		System.out.println("최대값 : " + max);
+		
 		System.out.println("\n---------------------------------");
 		
-		
-		
-		
-		
+		//정렬...
 		
 	}
 
