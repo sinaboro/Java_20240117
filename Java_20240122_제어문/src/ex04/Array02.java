@@ -32,6 +32,7 @@ public class Array02 {
 		System.out.println("총점 : " + total + ", 평균 : " + avg);
 		
 		System.out.println("\n---------------------------------");
+		System.out.println("\n---------------------------------");
 		
 		
 		
