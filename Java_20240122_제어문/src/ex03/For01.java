@@ -12,7 +12,7 @@ public class For01 {
 			sum = sum + i;
 		}
 		
-		System.out.println("누적합 : " + sum);
+		System.out.println("for 누적합 : " + sum);
 
 	}
 

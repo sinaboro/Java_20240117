@@ -10,7 +10,8 @@ public class 예금잔액 {
 		boolean flag=true;
 		Scanner sc = new Scanner(System.in);
 		
-		for(; flag == true; ) {  // for(; i<100; )
+		//for(; flag == true; ) {  // for(; i<100; )
+		while(flag == true) {  // for(; i<100; )
 		
 			System.out.println("-------------------------------");
 			System.out.println("1.예금\t|2.출금\t|3.잔고\t|4.종료");
