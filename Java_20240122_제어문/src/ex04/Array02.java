@@ -31,6 +31,8 @@ public class Array02 {
 		avg = (double)total/arrNum.length;
 		System.out.println("총점 : " + total + ", 평균 : " + avg);
 		
+		System.out.println("\n---------------------------------");
+		
 		
 		
 		
