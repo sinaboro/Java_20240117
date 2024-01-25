@@ -11,6 +11,9 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Java2\works\Java_강사_제어문"/>
+			<item value="C:\Java2\works\Java_강사_연산자"/>
+			<item value="C:\Java2\works\Java__연산자"/>
 			<item value="C:\Java2\works\aaaa"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
