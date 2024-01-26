@@ -16,6 +16,31 @@ public class Exam02 {
 		int num = findMax(arrNum);
 		
 		System.out.println("max : " + num);
+		
+	
+		String str  = "김대철";
+		int age  = 20;
+		double b = 123.12431221321;
+		
+		System.out.println("이름 : " + str);
+		System.out.println("나이 : " + age);
+		System.out.println(b);
+		
+		System.out.println(Math.PI);
+		
+		int x = 1;
+		int y = 5^2;
+		
+		if(x > 5) 
+			System.out.println("x : " + x);
+		
+		System.out.println(y);
+		
+		
+	 	if(0 <= x && x< 10)  ;  // if( 0<= x <10)
+		       
+		
+				
 	}
 
 	static int findMax(int[] arr) {
