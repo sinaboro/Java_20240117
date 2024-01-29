@@ -10,7 +10,7 @@ public class Calculator {
 		System.out.println(num);
 		
 		double avg = divide(5,2);
-		System.out.println(avg);
+		System.out.println(avg);       //ctrl+shift+[
 	}
 	
 	//리턴값이 없는 메소드 선언
