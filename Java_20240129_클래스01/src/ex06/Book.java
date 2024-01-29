@@ -11,21 +11,21 @@ package ex06;
 
 public class Book {
 	
-	String title;
-	String author;
-	String publisher;
-	int price;
+	private String title;
+	private String author;
+	private String publisher;
+	private int price;
 	
 	//다른 생성자 호출
-	Book(){
+	public Book(){
 		this("제목없음", "저자없음", "출판사없음",0);
 	}
 	
-	Book(String t, String a,  int p){
+	public Book(String t, String a,  int p){
 		this(t, a, "출판사없음",p);
 	}
 	
-	Book(String t, String a, String b, int p){
+	public Book(String t, String a, String b, int p){
 		title = t;
 		author = a;
 		publisher = b;
@@ -33,7 +33,7 @@ public class Book {
 	}
 	
 	
-	void displayBookInfo() {
+	public void displayBookInfo() {
 		System.out.println("제목 : " + title);
 		System.out.println("저자 : " + author);
 		System.out.println("출판사 : " + publisher);

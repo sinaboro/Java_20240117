@@ -1,5 +1,7 @@
 package ex07;
 
+import ex06.Book;
+
 public class CarController {
 
 	public static void main(String[] args) {
@@ -17,6 +19,9 @@ public class CarController {
 		car.setMake("기아");
 		car.setModel("k8");
 		car.displayCarDetails();
+		
+		Book book = new Book();
+		book.displayBookInfo();
 
 	}
 
