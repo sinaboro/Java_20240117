@@ -24,5 +24,11 @@ public class EBook extends Book{
 		this.format = format;
 				
 	}
+	
+	@Override
+	void displayInfo() {
+		super.displayInfo();
+		System.out.println("File Size: [" + fileSize + "] MB, Format: [" + format + "]");
+	}
 
 }

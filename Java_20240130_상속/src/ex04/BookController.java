@@ -4,13 +4,11 @@ public class BookController {
 
 	public static void main(String[] args) {
 		
-		EBook ebook = 
-				new EBook("스프링워크북","구멍가게", 2023, 10.2, "pdf");
+		AudioBook abook = 
+				new AudioBook("스프링워크북","코딩단", 2023, 3, "조운");
 		
-		ebook.displayInfo();
-		
-		
-		
+		abook.displayInfo();
+				
 	}
 
 }
