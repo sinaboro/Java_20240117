@@ -25,7 +25,7 @@ public class Phone {
 	}
 	
 	public void sendVoice(String message) {
-		System.out.println("자신 : " + message);
+		System.out.println("문자메시지 : " + message);
 	}
 
 	public void receiveVoice(String message) {

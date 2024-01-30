@@ -20,9 +20,14 @@ public class PhoneController {
 //		System.out.println(sp.toString());
 		
 		//                            모델, 색상, wifi유무
-		SmartPhone sp = new SmartPhone("m2","검정",true);
+//		SmartPhone sp = new SmartPhone("m2","검정",true);
+//		
+//		System.out.println(sp.toString());
 		
-		System.out.println(sp.toString());
+		
+		SmartPhone sp = new SmartPhone();
+		sp.sendVoice("문자보내기");
+		
 		
 		
 		

@@ -19,6 +19,11 @@ public class SmartPhone extends Phone{
 		this.wifi = wifi;
 	}
 	
+	@Override//어노테이션 sendVoice는 상위클래스를 재정의한다.
+	public void sendVoice(String message) {
+		System.out.println("음성메시지 : " + message);
+	}
+	
 	@Override
 	public String toString() {
 		System.out.println(super.toString());  //상위클래스 toString 메소드 호출
