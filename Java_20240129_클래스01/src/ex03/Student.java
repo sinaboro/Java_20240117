@@ -28,9 +28,8 @@ public class Student {
 	}
 	
 	void displayInformation() {
-		System.out.println("학번 : " + studentId);
-		System.out.println("이름 : " + name);
-		System.out.println("전공 : " + major);
+		
+		System.out.println("학번 : " + studentId + " 이름 : " + name + " 전공 : " + major);
 	}
 	
 }

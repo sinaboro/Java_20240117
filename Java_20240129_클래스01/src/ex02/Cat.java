@@ -19,6 +19,10 @@ public class Cat {
 		breed =s;
 	}
 	
+	String getBread(){
+		return breed;
+	}
+	
 	void setColor(String c) {
 		color = c;
 	}

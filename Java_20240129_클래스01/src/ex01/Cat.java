@@ -11,13 +11,11 @@ public class Cat {
 	void setAge(int n) {
 		if(n>0 && n<=150)
 			age = n;
-		else
-			System.out.println("나이 확인");
+		else {
+			age= 1;
+		}
 	}
 	//생성자(클래스이름하고 같다) --반환타입x
-	Cat(){
-		
-	}
 	
 	
 	//void(반환타입)  eat(함수명) ()(매개변수)

@@ -11,6 +11,8 @@ public class StudentExam {
 				);
 		
 		stud1.displayInformation();
+		
+	 	Student stud2 = new Student();
 
 	}
 

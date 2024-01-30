@@ -12,8 +12,10 @@ public class Example01 {
 		
 		c1.breed = "페르시안고양이";
 		c1.color = "흰색";
-		c1.setAge(100);
+		c1.setAge(1000);
+//		c1.age = 1000;
 		c1.eat();
+				
 		
 		Cat c2  = new Cat();
 		

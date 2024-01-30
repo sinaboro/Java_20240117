@@ -13,10 +13,12 @@ public class BookContrlloer {
 		book1.displayBookInfo();
 		
 		System.out.println("--------------");
+		
 		Book book2 = new Book();
 		book2.displayBookInfo();
 
 		System.out.println("--------------");
+		
 		Book book3 = new Book("자바의정석","남궁성","몰라",10000);
 		book3.displayBookInfo();
 	}

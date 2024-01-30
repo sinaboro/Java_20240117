@@ -21,12 +21,16 @@ public class Book {
 		this("제목없음", "저자없음", "출판사없음",0);
 	}
 	
-	public Book(String t, String a,  int p){
-		this(t, a, "출판사없음",p);
+	public Book(String title, String author,  int price){
+		this.title  = title; 
+		//this => 객체자기자신을 의미
+		this.author = author;
+		this.price  = price;
+		//this(t, a, "출판사없음",p);
 	}
 	
-	public Book(String t, String a, String b, int p){
-		title = t;
+	public Book(String _title, String a, String b, int p){
+		title = _title;
 		author = a;
 		publisher = b;
 		price  = p;

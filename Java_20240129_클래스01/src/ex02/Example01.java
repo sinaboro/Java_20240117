@@ -14,8 +14,12 @@ public class Example01 {
 //		c1.color = "흰색";
 		
 		c1.eat();
+		
+		String catName = c1.getBread();
+		System.out.println("catName : " + catName);
+		
 		               //러시안블루
-		Cat c2  = new Cat("코리아", "검정");
+		Cat c2  = new Cat();
 		
 //		c2.breed = "코리아";
 //		c2.color = "검정";
