@@ -10,12 +10,19 @@ public class PhoneController {
 		
 //		NewestPhone np = new NewestPhone();
 		
-		Phone phone = new Phone("m1", "흰색");
+//		Phone phone = new Phone("m1", "흰색");
 		
 //		System.out.println(phone.toString());
-		System.out.println(phone);
+//		System.out.println(phone);
+		
+		SmartPhone sp = new SmartPhone(true);
+		
+		System.out.println(sp.toString());
 		
 
+		
+		
+		
 	}
 
 }
