@@ -26,8 +26,6 @@ public class Book {
 	}
 	
 	void displayInfo() {
-		System.out.println("Title: " + title + ",  Author: " +author + ", Year: " + publicationYear);
+		System.out.println("Title: [" + title + "],  Author: [" +author + "], Year: [" + publicationYear + "]");
 	}
-	
-	
 }
