@@ -4,6 +4,7 @@ public class SmartPhone extends Phone{
 	
 	private boolean wifi;
 	
+	
 	public SmartPhone() {
 		System.out.println("SmartPhone()");
 	}
@@ -33,4 +34,19 @@ public class SmartPhone extends Phone{
 	public void internet() {
 		System.out.println("인터넷 연결!!");
 	}
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
