@@ -14,13 +14,13 @@ public class Phone {
 		this.model = model;
 		this.color = color;
 	}
-		
-	@Override
+	
 	public String toString() {
 		return "Phone [model=" + model + ", color=" + color + "]";
 	}
 
 	public void bell() {
+		
 		System.out.println("전화 벨이 울린다.");
 	}
 	
@@ -38,3 +38,5 @@ public class Phone {
 	
 	
 }
+
+

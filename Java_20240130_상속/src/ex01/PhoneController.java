@@ -19,6 +19,11 @@ public class PhoneController {
 		
 		System.out.println(sp.toString());
 		
+		
+//
+//		Phone p = new Phone("소나타","흰색");
+//		
+//		System.out.println(p.toString());
 
 		
 		
