@@ -8,4 +8,11 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex05.Book"/>
     <fullyQualifiedTypeName name="ex06.Book"/>
+    <fullyQualifiedTypeName name="ex01.Phone"/>
+    <fullyQualifiedTypeName name="ex02.Animal"/>
+    <fullyQualifiedTypeName name="ex02.Bird"/>
+    <fullyQualifiedTypeName name="ex03.Book"/>
+    <fullyQualifiedTypeName name="ex03.Textbook"/>
+    <fullyQualifiedTypeName name="ex03.Magazine"/>
+    <fullyQualifiedTypeName name="ex03.Novel"/>
 </qualifiedTypeNameHistroy>
