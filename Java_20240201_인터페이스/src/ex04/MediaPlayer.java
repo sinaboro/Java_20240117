@@ -10,4 +10,8 @@ public interface MediaPlayer {
 		System.out.println(file + "로딩 중......");
 	};
 	
+	static void test() {
+		System.out.println("test............");
+	}
+	
 }

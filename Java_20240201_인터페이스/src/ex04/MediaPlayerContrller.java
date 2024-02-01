@@ -23,7 +23,7 @@ public class MediaPlayerContrller {
 				break;
 			}
 		}
-		
+		MediaPlayer.test();
 		System.out.println("play stop.....................");
 	}
 }
