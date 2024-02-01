@@ -1,4 +1,4 @@
-package ex05;
+package ex06;
 
 public class Speaker2 extends Speaker{
 

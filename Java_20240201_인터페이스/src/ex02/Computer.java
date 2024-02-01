@@ -1,6 +1,4 @@
-package ex05;
-
-import ex04.Ga;
+package ex02;
 
 public class Computer {
 

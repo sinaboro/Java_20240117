@@ -1,11 +1,11 @@
-package ex05;
+package ex06;
 
 import ex04.Ga;
 
 public class Computer {
 
 	
-	Speaker3 sp = new Speaker3();
+	Speaker sp = new ChildSpeaker();
 	
 		
 	void powerOn() {

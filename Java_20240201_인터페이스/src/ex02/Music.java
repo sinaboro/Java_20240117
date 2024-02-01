@@ -1,6 +1,6 @@
-package ex05;
+package ex02;
 
-public class Music extends Speaker {
+public class Music implements Speaker {
 
 	   public Music() {
 	   }

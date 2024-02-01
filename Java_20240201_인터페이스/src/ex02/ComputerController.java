@@ -1,10 +1,10 @@
-package ex05;
+package ex02;
 
 public class ComputerController {
 
 	public static void main(String[] args) {
 		
-		Speaker speark = new Music();
+		Speaker speark = new ChildSpeaker();
 		
 		speark.powerOn();
 		speark.powerOff();

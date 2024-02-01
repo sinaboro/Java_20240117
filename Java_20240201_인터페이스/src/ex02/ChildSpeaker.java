@@ -1,6 +1,6 @@
-package ex05;
+package ex02;
 
-public class ChildSpeaker extends Speaker{
+public class ChildSpeaker implements Speaker{
 	   
 	   private boolean button;
 	   private int volume;
@@ -34,6 +34,10 @@ public class ChildSpeaker extends Speaker{
 	   public void soundDown() {
 	      volume--;
 	      System.out.println("볼륨 : " + volume);
+	   }
+	   
+	   public void aiController(){
+		   System.out.println("영서꺼..........");
 	   }
 
 

@@ -3,18 +3,19 @@ package ex05;
 /*
  * 틀만 스피커 
  */
-public class Speaker {
+public class Speaker {  
 
-	public void powerOn(){
-	}
+	public void powerOn() {
+		
+	}; 
 	
 	public void powerOff(){
 	}
 	
-	public void SoundUp(){
+	public void soundUp(){
 	}
 	
-	public void SoundDown() {
+	public void soundDown() {
 	}
 
 }

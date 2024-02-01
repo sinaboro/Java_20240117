@@ -1,6 +1,6 @@
-package ex05;
+package ex02;
 
-public class Speaker2 extends Speaker{
+public class Speaker2 implements Speaker{
 
 	   @Override
 	   public void powerOn() {
