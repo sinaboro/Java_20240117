@@ -28,7 +28,13 @@
     <fullyQualifiedTypeName name="ex03.WAVPlayer"/>
     <fullyQualifiedTypeName name="ex03.MP3Player"/>
     <fullyQualifiedTypeName name="ex03.FLACPlayer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex01.Sample"/>
     <fullyQualifiedTypeName name="ex01.Sample2"/>
+    <fullyQualifiedTypeName name="ex05.Computer"/>
+    <fullyQualifiedTypeName name="ex05.Audio"/>
+    <fullyQualifiedTypeName name="ex05.Product"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
