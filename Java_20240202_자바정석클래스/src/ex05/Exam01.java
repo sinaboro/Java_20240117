@@ -59,7 +59,7 @@ class Buyer {			// 고객, 물건을 사는 사람
 
 		//1.1
 		if(money < p.price) {
-			System.out.println("금액 부족!!!");
+			System.out.println(p+"(" +p.price+ ") 제품을 사기에는 금액 부족!!!");
 			return;
 		}
 		
