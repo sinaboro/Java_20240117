@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex05.Book"/>
     <fullyQualifiedTypeName name="ex06.Book"/>
     <fullyQualifiedTypeName name="ex01.Phone"/>
@@ -15,4 +14,21 @@
     <fullyQualifiedTypeName name="ex03.Textbook"/>
     <fullyQualifiedTypeName name="ex03.Magazine"/>
     <fullyQualifiedTypeName name="ex03.Novel"/>
+    <fullyQualifiedTypeName name="ex04.Speaker"/>
+    <fullyQualifiedTypeName name="ex04.Computer"/>
+    <fullyQualifiedTypeName name="ex05.Speaker3"/>
+    <fullyQualifiedTypeName name="ex05.Speaker"/>
+    <fullyQualifiedTypeName name="ex06.Speaker"/>
+    <fullyQualifiedTypeName name="ex01.Test"/>
+    <fullyQualifiedTypeName name="ex01.TV"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="ex01.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="ex03.MediaPlayer"/>
+    <fullyQualifiedTypeName name="ex03.WAVPlayer"/>
+    <fullyQualifiedTypeName name="ex03.MP3Player"/>
+    <fullyQualifiedTypeName name="ex03.FLACPlayer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ex01.Sample"/>
+    <fullyQualifiedTypeName name="ex01.Sample2"/>
 </qualifiedTypeNameHistroy>
