@@ -1,4 +1,4 @@
-package ex02;
+package ex03;
 
 /*
  * 이 코드 문제점(?)
@@ -18,14 +18,14 @@ class Orange{ //오렌지
 	}
 }
 
-class Box{  //사과,오렌지 담는 상자
-	private Object obj;
+class Box<T>{  //사과,오렌지 담는 상자
+	private T obj;
 	
-	void setObj(Object obj) {
+	void setObj(T obj) {
 		this.obj = obj;
 	}
 	
-	Object getObj(){
+	T getObj(){
 		return obj;
 	}
 }
@@ -34,21 +34,26 @@ public class FruitBoxEx01 {
 
 	public static void main(String[] args) {
 		
-		Box abox = new Box();
-		Box bbox = new Box();
+		Box<Apple> abox = new Box();
+		
+		Box<Orange> bbox = new Box();
 		
 		abox.setObj(new Apple());  //사과 담음
+		
 		bbox.setObj(new Orange()); //오렌지 담음
 		
-		Apple ap = (Apple)abox.getObj();
-		Orange op = (Orange)bbox.getObj();
+		Apple ap = abox.getObj();
+		Orange op = bbox.getObj();
 		
 		System.out.println(ap);
 		System.out.println(op);
 		
-		abox.setObj(10);
-		abox.setObj(1.2);
-		abox.setObj("String");
+//		abox.setObj(10);
+//		abox.setObj(1.2);
+//		abox.setObj("String");
+		
+		Box<Integer> cbox = new Box();
+		cbox.setObj(100);
 				
 	}
 
