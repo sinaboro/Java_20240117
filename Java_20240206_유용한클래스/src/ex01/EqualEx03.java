@@ -24,7 +24,8 @@ class Box2{
 	
 	@Override
 	public boolean equals(Object obj) {
-		
+//		Box2 b = (Box2)obj;
+//		return x   == b.x;
 		return x == ((Box2)obj).x;
 	}
 	

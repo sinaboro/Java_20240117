@@ -14,9 +14,9 @@ public class Exception01 {
 		
 		try { //문제 소지가 생길 가능성 있는 대상 기입
 			int num1 = sc.nextInt();  //정수입력을 요구 ==> 문자열 그때 어떻게?, 
-			int num2 = sc.nextInt(); //0 아닌 값 요구 ==> 0 입력하면 어떻게? 
+			int num2 = sc.nextInt(); 
 			
-			div = num1 / num2;
+			div = num1 / num2; //0 아닌 값 요구 ==> 0 입력하면 어떻게? 
 			
 			int[] arr = new int[3];  //배열 크기 3
 //			for(int i=0; i<arr.length; i++)  

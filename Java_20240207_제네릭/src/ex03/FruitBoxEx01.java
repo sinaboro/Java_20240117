@@ -34,9 +34,9 @@ public class FruitBoxEx01 {
 
 	public static void main(String[] args) {
 		
-		Box<Apple> abox = new Box();
+		Box<Apple> abox = new Box<Apple>(); //사과 박스
 		
-		Box<Orange> bbox = new Box();
+		Box<Orange> bbox = new Box(); //오렌지 박스
 		
 		abox.setObj(new Apple());  //사과 담음
 		
@@ -52,8 +52,6 @@ public class FruitBoxEx01 {
 //		abox.setObj(1.2);
 //		abox.setObj("String");
 		
-		Box<Integer> cbox = new Box();
-		cbox.setObj(100);
 				
 	}
 

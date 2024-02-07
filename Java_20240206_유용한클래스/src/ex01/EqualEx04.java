@@ -16,6 +16,7 @@ public class EqualEx04 {
 
 class Box3{
 	String str;
+	
 	public Box3(String str) {
 		this.str = str;
 	}
@@ -23,9 +24,26 @@ class Box3{
 	@Override
 	public boolean equals(Object obj) {
 		
-		return str.equals( ((Box3)obj).str);
+		Box3 b = (Box3)obj;
+		return this.str.equals(b.str);
+		
+	//	return str.equals( ((Box3)obj).str);
 		
 	}
 	
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

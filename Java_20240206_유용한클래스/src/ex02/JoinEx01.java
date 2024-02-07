@@ -16,7 +16,7 @@ public class JoinEx01 {
 		String str = String.join("-", arr);
 		System.out.println(str);
 
-		str = String.join("", arr);
+		str = String.join("*", arr);
 		System.out.println(str);
 		
 		
