@@ -26,6 +26,8 @@ public class GenericMethod01 {
 		Box<Integer> ibox = new SteelBox<Integer>(1234);
 		Box<String> sbox = new SteelBox<String>("korea");
 		
+		//제네릭 상속에서  Box -> SteelBox는 상속관계를 유지하지만
+		// Box<Number와 SteelBox<Integer> 는 타켓은 반드시 같은 타입이여야한다.
 		//Box<Number> nbox = new SteelBox<Integer>(1234);
 		
 		System.out.println(ibox.get());
