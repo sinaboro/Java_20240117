@@ -26,6 +26,8 @@ public class GenericMethod01 {
 		Box<Integer> ibox = new SteelBox<Integer>(1234);
 		Box<String> sbox = new SteelBox<String>("korea");
 		
+		//Box<Number> nbox = new SteelBox<Integer>(1234);
+		
 		System.out.println(ibox.get());
 		System.out.println(sbox.get());
 	}
