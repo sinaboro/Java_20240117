@@ -25,6 +25,7 @@ class C extends B{
 	}
 }
 
+
 public class Exam01 {
 	
 	//                  A객체, B객체, C객체 가능
