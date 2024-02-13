@@ -15,12 +15,21 @@ class Box<T>{
 class BoxFactory{
 	//제네릭 메소드==>   <T>:제네릭메소드 표시,
 	//Box<T>: 반환타입, makeBox:함수명, (T o) : 매개변수
+	
 	public static <T> Box<T> makeBox(T o){
 		Box<T> box = new Box<T>();
 		box.set(o);
 		return box;
 	}
 }
+
+/* Box<String> sBox = BoxFactory.makeBox("korea"); ==> 이문장이 전달되면
+ * 대략 이렇게 생성된다.
+public static <T> Box<String> makeBox(String o){
+	Box<String> box = new Box<String>();
+	box.set(o);
+	return box;
+} */
 
 public class GenericMethod01 {
 

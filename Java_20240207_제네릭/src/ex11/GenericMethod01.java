@@ -24,6 +24,7 @@ public class GenericMethod01 {
 	public static void main(String[] args) {
 		
 		Box<Integer> ibox = new SteelBox<Integer>(1234);
+		
 		Box<String> sbox = new SteelBox<String>("korea");
 		
 		//제네릭 상속에서  Box -> SteelBox는 상속관계를 유지하지만

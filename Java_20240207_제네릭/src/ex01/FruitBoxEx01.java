@@ -50,6 +50,8 @@ public class FruitBoxEx01 {
 		OrangeBox oBox = new OrangeBox();
 		
 		aBox.setAp(new Apple());
+//		aBox.setAp(10);
+//		aBox.setAp("String");
 				
 		oBox.setOp(new Orange());
 		

@@ -26,12 +26,16 @@ public class GenericMethod01 {
 	public static void main(String[] args) {
 		
 		Box<Integer> ibox = new Box();
-		ibox.set(1234);
+		ibox.set(125);
+		
 		Unboxer.peekBox(ibox);
 		
 		Box<Double> dbox = new Box();
 		dbox.set(12.5);
 		Unboxer.peekBox(dbox);
+		
+		Box<Number> nbox = new Box();
+		nbox.set(10.8);
 		
 		
 	}

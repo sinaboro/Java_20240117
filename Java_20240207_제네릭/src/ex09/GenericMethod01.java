@@ -8,6 +8,12 @@ package ex09;
 class Box<T>{   //T --> String
 	private T obj;
 	
+	public Box() {}
+	
+	public Box(T obj){
+		this.obj = obj;
+	}
+	
 	void set(T obj) {
 		this.obj = obj;
 	}
@@ -28,14 +34,32 @@ public class GenericMethod01 {
 
 	public static void main(String[] args) {
 		
-		Box<String> sbox = new Box<String>();
-		sbox.set("korea");
+		Box<String> sbox = new Box();
+		sbox.set("kor");
 		
 		String str = Unboxer.openBox(sbox);
+
 		
-		System.out.println(str);
+		String str2 = Unboxer.openBox(new Box<String>("eng"));
+		
+		System.out.println("str : " + str);
+		System.out.println("str2 : " + str2);
+		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

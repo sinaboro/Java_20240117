@@ -44,7 +44,7 @@ public class GenericMethod01 {
 		Unboxer.peekBox(dbox);
 		
 		Box<Object> obox2 = new Box();
-		obox2.set(new A());
+		obox2.set(false);
 		Unboxer.peekBox(obox2);
 		
 		

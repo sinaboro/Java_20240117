@@ -31,6 +31,10 @@ class Box<T extends A>{
 	}
 }
 
+class Apple{
+	
+}
+
 public class BoxEx02 {
 
 	public static void main(String[] args) {
@@ -38,6 +42,8 @@ public class BoxEx02 {
 		Box<A> abox = new Box<A>();
 		Box<B> bbox = new Box<B>();
 		Box<C> cbox = new Box<C>();
+		
+//		Box<Apple>  apbox = new Box<>();
 		
 //		Box<Integer> ibox = new Box<Integer>();
 		

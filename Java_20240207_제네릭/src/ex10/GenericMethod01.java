@@ -24,7 +24,7 @@ class BoxFactory{
 
 class Unboxer{
 	public static <T extends Number> T openBox(Box<T> box) {
-		System.out.println("unboxed : " + box.get().doubleValue());
+		System.out.println("unboxed : " + (box.get().doubleValue()+1));
 		return box.get();
 	}
 }
@@ -34,7 +34,10 @@ public class GenericMethod01 {
 
 	public static void main(String[] args) {
 		
-		Box<Double> ibox = BoxFactory.makeBox(10.2);
+		Box<Double> ibox = BoxFactory.<Double>makeBox(10.2);
+		
+		
+		System.out.println("ibox : " + ibox.get());
 		
 		double num = Unboxer.openBox(ibox);
 		System.out.println("data : " + num);
