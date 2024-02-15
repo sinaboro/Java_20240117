@@ -22,6 +22,7 @@ public class HashMapCollection {
 		Set<Integer> set = map.keySet();  //키만 모아서 set저장한다.
 		
 		Iterator<Integer> it = set.iterator();
+	
 		while(it.hasNext())
 			System.out.print(map.get(it.next()) + '\t');
 		

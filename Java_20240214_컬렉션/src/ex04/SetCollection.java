@@ -19,18 +19,16 @@ public class SetCollection {
 		set.add("Box");
 		set.add("Toy");
 		
+		for(String s : set)
+			System.out.print(s + '\t');
+		System.out.println();
+		
 		Iterator<String> it = set.iterator();  //반복자.
 		
 		while(it.hasNext()) {
 			System.out.print(it.next() + '\t');
 		}
 		System.out.println();
-		
-		
-		
-		
-		
-		
 		
 	}
 

@@ -29,8 +29,13 @@ class QueueEx1 {
 					// 입력받은 명령어를 저장하고,
 					save(input);    
 
+					System.out.println("------------------------");
+					for(Object o : q)
+						System.out.print(o + " ");
+					System.out.println("\n------------------------\n");
+					
 					// LinkedList의 내용을 보여준다.
-					LinkedList tmp = (LinkedList)q;
+					ArrayList tmp = (ArrayList)q;
 					ListIterator it = tmp.listIterator();
 
 					while(it.hasNext()) {

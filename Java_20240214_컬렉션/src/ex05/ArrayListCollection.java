@@ -30,9 +30,10 @@ public class ArrayListCollection {
 		
 		
 		System.out.println();
-		System.out.println("한번 더 출력");
 		
-		it = list.iterator();
+		System.out.println("한번 더 출력");
+
+		it = list.iterator();  //반복자를 다시 스타트지점으로 이동시킨다.
 		while(it.hasNext())
 			System.out.print(it.next() + '\t');
 		
