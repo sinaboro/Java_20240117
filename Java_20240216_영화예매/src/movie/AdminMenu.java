@@ -21,7 +21,10 @@ public class AdminMenu extends AbstractMenu {
 	
 	@Override
 	public Menu next() {
-		return null;
+		switch(sc.nextLine()) {
+		case "b" : return prevMenu; //b입력하면, 이전 메뉴 반환
+		default: return this;  //자기자신(AdminMenu) ==> new AdminMenu(null); 객체
+		}
 	}
 
 }
