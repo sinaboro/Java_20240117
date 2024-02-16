@@ -16,7 +16,7 @@ public class Movie {
 	private String title;  //영화 제목
 	private String genre; //영화 장르
 	
-	private static final File file = new File("movies.txt");
+	private static final File file = new File("src/movie/movies.txt");
 	
 //	public Movie(long id, String title, String genre ) {
 //		this.id = id;
@@ -35,7 +35,6 @@ public class Movie {
 			
 			while( (line = br.readLine()) != null) {
 				//1627175707,에벤져스,판타지 >>  한 줄 읽어왔다.
-				System.out.println("line >> " + line);
 				
 				String[] temp = line.split(",");  
 				/*
@@ -60,7 +59,23 @@ public class Movie {
 			e.printStackTrace();
 		}
 						
-		return movies;
+		return movies;  //영화 객체가 담긴 ArrayList 반환
+	}
+
+//	@Override
+//	public String toString() {
+//		return "Movie [id=" + id + ", title=" + title + ", genre=" + genre + "]";
+//	}
+	
+	
+	@Override
+	public String toString() {
+		return String.format("[%d]: %s(%s)", id, title, genre);
+		//                    정수형   실수형
+		
+		//1627175707,에벤져스,판타지 >>  한 줄 읽어왔다.
+		
+		// "[1627175707] : 에벤져스(판타지)"
 	}
 }
 
