@@ -22,11 +22,45 @@ public class MainMenu extends AbstractMenu{
 	@Override
 	public Menu next() {
 		switch(sc.nextLine()) {
+		case "4":
+			if(! checkAdminPassword()) {
+				System.out.println(">> 비밀번호가 틀렸습니다.");
+				return this;
+			}
+			AdminMenu adminMenu = AdminMenu.getInstance();
+			adminMenu.setPrevMenu(this);
+			return adminMenu;
 		case "q": return prevMenu; //q입력하면, prevMenu를 반환
 		default : return this;    //그 외 입력 MainMenu로 돌아감
 		}
 		
 	}
-	
+
+	private boolean checkAdminPassword() {
+		System.out.println("관리자 비밀번호를 입력하세요 : ");
+		
+		String admin = sc.nextLine();
+		
+		return "admin".equals(admin);
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
