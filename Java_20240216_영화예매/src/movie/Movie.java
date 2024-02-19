@@ -104,9 +104,46 @@ public class Movie {
 	private String toFileString() {
 		return String.format("%d,%s,%s", id,title, genre);
 	}
+                              //1708309377
+	public static void delete(String movieId) {
+		
+		BufferedReader br = null;
+		String text = "";
+		String line = "";
+		
+		try {
+			br = new BufferedReader(new FileReader(file));
+			
+			while((line=br.readLine() )!=null ) {
+				String[] temp = line.split(",");
+				if(movieId.equals(temp[0])) {
+					continue;
+				}
+				text += line + "\n";
+			}
+			br.close();
+			
+			FileWriter fw = new FileWriter(file);
+			fw.write(text);
+			
+			fw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 	
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
