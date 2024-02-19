@@ -17,13 +17,56 @@ public class Car {
 	private String year;
 	private String color;
 	
-	//setter
-	void setMake(String m) {
-		make = m;
+	
+	
+	
+	public String getMake() {
+		return make;
 	}
 
-	void setModel(String m) {
-		model = m;
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getYear() {
+		return year;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public boolean isEngine() {
+		return engine;
+	}
+
+	public void setEngine(boolean engine) {
+		this.engine = engine;
+	}
+
+	Car(){}
+	
+	Car(String m, String mo, String y, String c) {
+		make = m;
+		model = mo;
+		year = y;
+		color = c;
 	}
 	
 	//생성자보다는 효율성 떨어진다..
@@ -34,6 +77,14 @@ public class Car {
 		color = c;
 	}
 	
+	
+	
+	@Override
+	public String toString() {
+		return "Car [make=" + make + ", model=" + model + ", year=" + year + ", color=" + color + ", engine=" + engine
+				+ "]";
+	}
+
 	void displayCarDetails() {
 		System.out.println("제조사 : " + make);
 		System.out.println("모델 : " + model);

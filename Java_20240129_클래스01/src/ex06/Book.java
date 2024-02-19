@@ -22,18 +22,20 @@ public class Book {
 	}
 	
 	public Book(String title, String author,  int price){
-		this.title  = title; 
-		//this => 객체자기자신을 의미
-		this.author = author;
-		this.price  = price;
-		//this(t, a, "출판사없음",p);
+		
+		this(title,author, "출판사없음",price);
 	}
 	
 	public Book(String _title, String a, String b, int p){
 		title = _title;
 		author = a;
 		publisher = b;
-		price  = p;
+		
+		if(price>0 && price<100000)
+			price  = p;
+		else
+			price = 0;
+		
 	}
 	
 	

@@ -21,6 +21,7 @@ public class Book {
 		author = "저자없음";
 		price  = 0;
 		publisher = "출판사없음";
+		
 	}
 	
 	Book(String t, String a,  int p){

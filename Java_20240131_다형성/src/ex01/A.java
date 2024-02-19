@@ -2,7 +2,13 @@ package ex01;
 
 public class A {
 
-	void funcA() {
-		System.out.println("A");
+	int a;
+	
+	public A() {
 	}
+	
+	public A(int a) {
+		this.a = a;
+	}
+	
 }

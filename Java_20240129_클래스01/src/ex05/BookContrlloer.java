@@ -13,12 +13,22 @@ public class BookContrlloer {
 		book1.displayBookInfo();
 		
 		System.out.println("--------------");
+		
 		Book book2 = new Book();
 		book2.displayBookInfo();
 
 		System.out.println("--------------");
 		Book book3 = new Book();
 		book3.displayBookInfo();
+		
+		
+		Book book4 = new Book(
+				"JAVA 기본",
+				"송미영",
+				"퍼블리싱",
+				30000
+				);
+		
 	}
 
 }

@@ -4,12 +4,10 @@ public class ComputerController {
 
 	public static void main(String[] args) {
 		
-		Speaker speark = new ChildSpeaker();
-		
-		speark.powerOn();
-		speark.powerOff();
-		speark.soundUp();
-		speark.soundDown();
+		Speaker ch = new ChildSpeaker();
+		ch.powerOn();
+		ch.powerOff();
+		ch.라디오수신기능();
 	}
 
 }

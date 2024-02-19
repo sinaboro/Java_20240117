@@ -13,8 +13,9 @@ public interface Speaker {
 	
 	public void soundDown();
 	
-	default public void aiController() {
-		
+	default public void 라디오수신기능() {
+		System.out.println("라디오수신기능");
 	};
+	
 
 }

@@ -36,7 +36,7 @@ public class GenericMethod01 {
 	public static void main(String[] args) {
 		
 //		Box<String> sBox = BoxFactory.<String>makeBox("korea");
-		Box<String> sBox = BoxFactory.makeBox("korea");
+		Box<String> sBox = BoxFactory.<String>makeBox("korea");
 		
 		System.out.println(sBox.get());
 		

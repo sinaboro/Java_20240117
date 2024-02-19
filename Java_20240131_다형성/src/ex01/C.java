@@ -1,7 +1,16 @@
 package ex01;
 
 public class C extends B{
-	void funcC() {
-		System.out.println("C");
+	
+	int c;
+	
+	public C() {
 	}
+	
+	public C(int a,int b, int c) {
+		super(a,b);
+		this.c =c;
+	}
+	
+	
 }

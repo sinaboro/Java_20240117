@@ -29,7 +29,7 @@ public class BoxEx01 {
 		System.out.println("----------------------------");
 		
 		Box<Double> dBox = new Box<Double>();
-		dBox.set(12.5);
+		dBox.set(10.2);
 		double dNum = dBox.get();
 		System.out.println(dNum);
 		

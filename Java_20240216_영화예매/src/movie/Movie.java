@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.time.Instant;
 import java.util.ArrayList;
 
 import lombok.AllArgsConstructor;
@@ -23,6 +25,15 @@ public class Movie {
 //		this.title = title;
 //		this.genre = genre;
 //	}
+	
+	public Movie(String title, String genre) {
+		
+		this(Instant.now().getEpochSecond(), title, genre);
+		
+		long id = Instant.now().getEpochSecond();
+		System.out.println("id : " + Instant.now().getEpochSecond());
+		
+	}
 	
 	public static ArrayList<Movie> findAll() {
 		
@@ -77,6 +88,24 @@ public class Movie {
 		
 		// "[1627175707] : 에벤져스(판타지)"
 	}
+
+	public void save() {
+		try {
+			           //movies.txt 파일에 이어서 쓰기 설정(true).
+			FileWriter fw = new FileWriter(file, true);
+			
+			fw.write(this.toFileString() + "\n");
+			fw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}  
+	}
+
+	private String toFileString() {
+		return String.format("%d,%s,%s", id,title, genre);
+	}
+	
+	
 }
 
 
