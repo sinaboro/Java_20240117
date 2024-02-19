@@ -22,6 +22,9 @@ public class MainMenu extends AbstractMenu{
 	@Override
 	public Menu next() {
 		switch(sc.nextLine()) {
+		case "2":
+			checkReservation();   //예매확인
+			return this;  //메인 메뉴 객체 반환(다시 메인메뉴가 나타난다.)
 		case "4":
 			if(! checkAdminPassword()) {
 				System.out.println(">> 비밀번호가 틀렸습니다.");
@@ -34,6 +37,23 @@ public class MainMenu extends AbstractMenu{
 		default : return this;    //그 외 입력 MainMenu로 돌아감
 		}
 		
+	}
+
+	private void checkReservation() {
+		System.out.println("예매번호를 입력하세요: ");
+		
+		try {
+			Reservation reservation = Reservation.findById(sc.nextLine());
+			
+			if(reservation == null) {
+				System.out.println(">> 예매 내역이 없습니다.");
+			}else {
+				System.out.println(">>[확인 완료]\n" + reservation);
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	private boolean checkAdminPassword() {
