@@ -10,6 +10,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 @AllArgsConstructor
 public class Movie {
@@ -25,6 +26,8 @@ public class Movie {
 //		this.title = title;
 //		this.genre = genre;
 //	}
+	
+	
 	
 	public Movie(String title, String genre) {
 		
@@ -130,6 +133,43 @@ public class Movie {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static Movie findAll(String movieID) {
+		
+		Movie movie = null;
+		BufferedReader bf = null;
+		
+		try {
+			bf = new BufferedReader(new FileReader(file));
+			String line = null;
+			
+			while((line = bf.readLine())!=null) {
+				String[] temp = line.split(",");
+				if(movieID.equals(temp[0])) {
+					movie = new Movie(
+							Long.parseLong(temp[0]),
+							temp[1],
+							temp[2]
+							);
+					break;
+				}
+			}
+			bf.close();
+			return movie;
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return movie;
+	}
+
+	public String getTitle() {
+		return title;
 	}
 	
 	
