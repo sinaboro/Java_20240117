@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 
@@ -108,6 +109,10 @@ public class Reservation {
 	public String toString() {
 		return 
 		String.format("영화 : %s, 좌석: %s", movieTitle, SeatName);
+	}
+
+	public static List<Reservation> findMovieId(String movieId2) {
+		return null;
 	}
 }
 

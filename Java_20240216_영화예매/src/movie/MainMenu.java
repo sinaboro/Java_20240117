@@ -50,11 +50,17 @@ public class MainMenu extends AbstractMenu{
 	private void reserve() {
 		List<Movie> movies = Movie.findAll();
 		for(Movie movie : movies)
-			System.out.println(movie);
+			System.out.println(movie);    //<<영화 목록 보여주기
 		
 		System.out.println("예매할 영화를 선택하세요: ");
 		
-		Movie movie = Movie.findAll(sc.nextLine());
+		String movieId = sc.nextLine();
+		Movie movie = Movie.findAll(movieId);  // << 예매 영화 선택
+		
+		
+		//예매된 좌석 현황.
+		List<Reservation> reservations= Reservation.findMovieId(movieId);
+		
 	}
 
 	private void cancelReservation() {
