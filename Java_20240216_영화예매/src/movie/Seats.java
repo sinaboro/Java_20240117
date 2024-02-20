@@ -50,7 +50,20 @@ public class Seats {
 			throw new Exception("이미 예매된 좌석입니다.");  //
 		}
 		map[row][col] = "X";  //예매 좌석 확정
-		
 	}
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
