@@ -6,13 +6,17 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 @AllArgsConstructor
+//@Getter
 public class Reservation {
 	
+
 	private long id;   //예매번호
 	private long movieId;    //영화 구별 번호
 	private String movieTitle; //영화 제목
@@ -20,12 +24,14 @@ public class Reservation {
 	
 	private static final File file = new File("src/movie/reservations.txt");
 	
+	
 //	public Reservation(long id, long movieId,String movieTitle, String SeatName) {
 //		this.id = id;
 //		this.movieId = movieId;
 //		this.movieTitle = movieTitle;
 //		this.SeatName = SeatName;
 //	}
+	
 	
 	public static Reservation findById(String reservationId) {
 	
@@ -111,8 +117,39 @@ public class Reservation {
 		String.format("영화 : %s, 좌석: %s", movieTitle, SeatName);
 	}
 
-	public static List<Reservation> findMovieId(String movieId2) {
-		return null;
+	
+	//데드맨(movieId) 영화 예매 현황 
+	public static List<Reservation> findMovieId(String movieId) throws Exception{
+		
+		ArrayList<Reservation> reservations = new ArrayList<Reservation>();
+		BufferedReader bf = new BufferedReader(new FileReader(file));
+		
+		String line = null;
+		
+		while((line = bf.readLine()) != null) {
+			String[] temp = line.split(",");
+			if(movieId.equals(temp[1])) {  //영화 ID
+				long id = Long.parseLong(temp[0]); // 예매 ID
+				long mId = Long.parseLong(temp[1]); // 영화 ID
+				String movieTitle = temp[2];
+				String seatName = temp[3];
+				
+				Reservation r = new Reservation(id, mId, movieTitle, seatName);
+				
+				reservations.add(r);
+			}
+		}
+		bf.close();
+		
+		return reservations;
+	}
+
+	public String getSeatName() {
+		return SeatName;
+	}
+
+	public static File getFile() {
+		return file;
 	}
 }
 
