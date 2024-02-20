@@ -25,6 +25,9 @@ public class MainMenu extends AbstractMenu{
 		case "2":
 			checkReservation();   //예매확인
 			return this;  //메인 메뉴 객체 반환(다시 메인메뉴가 나타난다.)
+		case "3":
+			cancelReservation();  //예매 취소
+			return this; //메인 메뉴 객체 반환(다시 메인메뉴가 나타난다.)
 		case "4":
 			if(! checkAdminPassword()) {
 				System.out.println(">> 비밀번호가 틀렸습니다.");
@@ -35,6 +38,19 @@ public class MainMenu extends AbstractMenu{
 			return adminMenu;
 		case "q": return prevMenu; //q입력하면, prevMenu를 반환
 		default : return this;    //그 외 입력 MainMenu로 돌아감
+		}
+		
+	}
+
+	private void cancelReservation() {
+		System.out.println("예매번호를 입력하세요:");
+		
+		Reservation  canceled = Reservation.cancel(sc.nextLine());
+		
+		if(canceled == null) {
+			System.out.println("예매 내역이 없습니다.");
+		}else {
+			System.out.printf(">>[취소완료] %s의 예매가 취소되었습니다.", canceled);
 		}
 		
 	}
