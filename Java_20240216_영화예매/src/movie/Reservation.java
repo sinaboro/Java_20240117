@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
@@ -118,7 +119,7 @@ public class Reservation {
 	}
 
 	
-	//데드맨(movieId) 영화 예매 현황 
+	//데드맨(movieId) 영화 예매 현황                    1627175707
 	public static ArrayList<Reservation> findMovieId(String movieId) throws Exception{
 		
 		ArrayList<Reservation> reservations = new ArrayList<Reservation>();
@@ -127,8 +128,11 @@ public class Reservation {
 		String line = null;
 		
 		while((line = bf.readLine()) != null) {
+			
 			String[] temp = line.split(",");
+			
 			if(movieId.equals(temp[1])) {  //영화 ID
+				
 				long id = Long.parseLong(temp[0]); // 예매 ID
 				long mId = Long.parseLong(temp[1]); // 영화 ID
 				String movieTitle = temp[2];

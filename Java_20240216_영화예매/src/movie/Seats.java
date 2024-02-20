@@ -11,7 +11,7 @@ public class Seats {
 	
 	public Seats(ArrayList<Reservation> reservations)  throws Exception{
 		for(int i=0; i<MAX_ROW; i++) {
-			for(int j=0; j<MAX_ROW; j++) {
+			for(int j=0; j<MAX_COL; j++) {
 				map[i][j]="O";   //좌석 초기화
 			}
 		}
@@ -36,7 +36,7 @@ public class Seats {
 			}
 			System.out.println();
 		}
-		System.out.println(" 1 2 3 4 5 6 7 8 9");
+		System.out.println("   1 2 3 4 5 6 7 8 9");
 	}
 	
 	
