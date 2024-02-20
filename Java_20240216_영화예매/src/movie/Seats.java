@@ -40,7 +40,7 @@ public class Seats {
 	}
 	
 	
-	private void mark(String seatName) throws Exception{
+	public void mark(String seatName) throws Exception{
 		
 		char[] temp = seatName.toCharArray();
 		int row = temp[0]  - 'A' ;  //행 인텍스 계산

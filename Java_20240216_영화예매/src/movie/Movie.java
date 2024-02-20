@@ -171,6 +171,11 @@ public class Movie {
 	public String getTitle() {
 		return title;
 	}
+
+	public long getId() {
+		return id;
+	}
+	
 	
 	
 }

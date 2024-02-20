@@ -58,14 +58,25 @@ public class MainMenu extends AbstractMenu{
 			
 			String movieId = sc.nextLine();
 			Movie movie = Movie.findAll(movieId);  // << 예매 영화 선택
+			
 			//예매된 좌석 현황.
 			ArrayList<Reservation> reservations = 
 					Reservation.findMovieId(movieId);
 			
 			Seats seats = new Seats(reservations);
 			
-			seats.show();
+			seats.show();  //예약좌석 및 빈 좌석 확인
 		
+			System.out.println("좌석을 선택하세요(예:E-9): ");
+			String seatName = sc.nextLine();
+			
+			seats.mark(seatName);  //좌석 예매
+			
+			Reservation reservation = 
+					new Reservation(movie.getId() , movie.getTitle(), seatName);
+			
+			reservation.save();
+			
 			
 		}catch (Exception e) {
 			System.out.printf(">> 예매에 실패하였습니다: %s\n", e.getMessage());
