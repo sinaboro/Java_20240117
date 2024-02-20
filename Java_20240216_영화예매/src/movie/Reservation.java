@@ -36,9 +36,12 @@ public class Reservation {
 
 	public Reservation(long movieId,String movieTitle, String SeatName) {
 		this( Instant.now().toEpochMilli() , movieId, movieTitle, SeatName);
+		
+//		System.out.println("|"+ movieId + "|");
 	}
 	
 	public void save() throws IOException{
+		
 		FileWriter fw  = new FileWriter(file,true);
 		
 		fw.write(this.toFileString() + "\n");
@@ -46,7 +49,7 @@ public class Reservation {
 	}
 	
 	private String toFileString() {
-		return String.format("%d, %d, %s, %s", id, movieId,movieTitle,SeatName);
+		return String.format("%d,%d,%s,%s", id, movieId,movieTitle,SeatName);
 	}
 
 	public static Reservation findById(String reservationId) {

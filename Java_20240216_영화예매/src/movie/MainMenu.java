@@ -81,8 +81,6 @@ public class MainMenu extends AbstractMenu{
 		}catch (Exception e) {
 			System.out.printf(">> 예매에 실패하였습니다: %s\n", e.getMessage());
 		}
-		
-		
 	}
 
 	private void cancelReservation() {
