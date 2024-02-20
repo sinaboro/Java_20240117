@@ -1,5 +1,6 @@
 package movie;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainMenu extends AbstractMenu{
@@ -59,7 +60,7 @@ public class MainMenu extends AbstractMenu{
 			Movie movie = Movie.findAll(movieId);  // << 예매 영화 선택
 			
 			//예매된 좌석 현황.
-			List<Reservation> reservations= Reservation.findMovieId(movieId);
+			ArrayList<Reservation> reservations= Reservation.findMovieId(movieId);
 			
 			Seats seats = new Seats(reservations);
 			

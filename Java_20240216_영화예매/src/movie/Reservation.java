@@ -119,7 +119,7 @@ public class Reservation {
 
 	
 	//데드맨(movieId) 영화 예매 현황 
-	public static List<Reservation> findMovieId(String movieId) throws Exception{
+	public static ArrayList<Reservation> findMovieId(String movieId) throws Exception{
 		
 		ArrayList<Reservation> reservations = new ArrayList<Reservation>();
 		BufferedReader bf = new BufferedReader(new FileReader(file));
