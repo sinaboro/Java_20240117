@@ -27,8 +27,6 @@ public class Movie {
 //		this.genre = genre;
 //	}
 	
-	
-	
 	public Movie(String title, String genre) {
 		
 		this(Instant.now().getEpochSecond(), title, genre);
@@ -175,30 +173,4 @@ public class Movie {
 	public long getId() {
 		return id;
 	}
-	
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

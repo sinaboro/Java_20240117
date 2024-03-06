@@ -174,19 +174,3 @@ public class Reservation {
 		return file;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

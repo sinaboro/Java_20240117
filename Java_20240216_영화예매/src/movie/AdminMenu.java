@@ -74,13 +74,3 @@ public class AdminMenu extends AbstractMenu {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-

@@ -52,18 +52,3 @@ public class Seats {
 		map[row][col] = "X";  //예매 좌석 확정
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
