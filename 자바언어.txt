@@ -1,0 +1,10 @@
+컴파일 명령 : javac  Example.java -> Example.class이 생성됨
+
+실행 명령 : java Example -> 먼저 번역된 Example.class이 실행됨
+
+
+ 원시 파일 : *.java - 사람이 쉽게 알 수 있는 자바 언어로 작성된 파일
+
+ 목적 파일 : *.class - 실행 가능한 상태의 로드 모듈(기계어 코드)
+
+
