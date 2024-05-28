@@ -1,5 +1,7 @@
 package ex07;
 
+import java.util.function.BiFunction;
+
 @FunctionalInterface
 interface MaxA{
 	int max(int a, int b);
@@ -25,6 +27,22 @@ public class Exam01 {
 		System.out.println(result.max(100, 300));
 		
 		System.out.println(result2.max(5, 3));
+		System.out.println("-------------------");
+		
+		BiFunction<Integer, Integer, Integer> bf = 
+				(a, b) ->  a > b ? a : b;
+				
+		System.out.println(bf.apply(5, 7));
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
